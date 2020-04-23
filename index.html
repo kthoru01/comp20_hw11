@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Get company data</title>
+	<style type='text/css'>
+		input {margin-top: 20px; font-size: 20px;}
+		body {padding: 0px 20px 0px 20px; font-size: 20px;}
+	</style>
+</head>
+
+<body>
+	<h2> Please enter company name or stock ticker </h2>
+	<form method="Get" action="http://localhost:8080">
+		<input type='text' name='user_in' placeholder='Enter name or ticker'> <br/>
+		You chose: 
+		<input type="radio" id="cname" name="company" value="cname">
+  		<label for="cname">Company name</label>
+  		<input type="radio" id="sticker" name="company" value="sticker">
+  		<label for="sticker">Stock ticker</label><br/>
+  		<input type='submit' value='Submit form'>
+	</form>
+</body>
+
+</html>
